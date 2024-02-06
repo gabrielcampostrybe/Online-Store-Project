@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../componentsCSS/ProductCard.css';
-// import shoppingCart from '../img/shoppingCart.png';
 import { saveLocalStorage } from '../services/helpers';
 
 class ProductCard extends React.Component {
