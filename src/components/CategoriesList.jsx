@@ -19,9 +19,7 @@ class CategoriesList extends React.Component {
     const { categories } = this.state;
     const { selectCategory } = this.props;
     return (
-      <div
-        className="categories-list"
-      >
+      <div>
         <h2
           className="title-categories"
         >
@@ -31,7 +29,7 @@ class CategoriesList extends React.Component {
           className="category-select"
           onChange={ (event) => selectCategory(event) }
         >
-          <option>Select a category</option>
+          <option>Categorias</option>
           {
             categories.map((category) => (
               <option

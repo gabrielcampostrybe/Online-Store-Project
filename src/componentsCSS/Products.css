@@ -4,3 +4,12 @@
   font-size: 17px;
   color: white;
 }
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+
