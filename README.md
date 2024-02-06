@@ -1,4 +1,4 @@
-# Welcome to my Online Frontend Project!
+# Welcome to my Online Store Project!
 
 This was a project I made in group while doing my web development course.
 
