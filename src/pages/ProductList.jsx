@@ -74,13 +74,13 @@ class ProductList extends Component {
             Pesquisar
           </button>
         </label>
+        <div>
+          <CategoriesList selectCategory={ this.searchForCategory } />
+        </div>
         <Products
           productList={ productList }
           totalItens={ totalItens }
         />
-        <div>
-          <CategoriesList selectCategory={ this.searchForCategory } />
-        </div>
       </div>
     );
   }
