@@ -1,14 +1,4 @@
 .App {
   min-height: 100vh;
-  background-color: #f8f8f8;
-  background-image: url('https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg?w=1380&t=st=1707085515~exp=1707086115~hmac=bd9fc6a358bc278c2090507e03445287420afd4af50168f80d1010f98d008335');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.shopping-cart-img {
-  height: 50px;
-  color: white;
+  background-color: rgb(1, 1, 26);
 }

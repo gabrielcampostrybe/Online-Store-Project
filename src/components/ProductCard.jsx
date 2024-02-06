@@ -1,6 +1,8 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import '../componentsCSS/ProductCard.css';
+// import shoppingCart from '../img/shoppingCart.png';
 import { saveLocalStorage } from '../services/helpers';
 
 class ProductCard extends React.Component {
@@ -41,6 +43,7 @@ class ProductCard extends React.Component {
     return (
       <div data-testid="product">
         <Link
+          className="product-card"
           data-testid="product-detail-link"
           to={ `/product/${id}` }
           id={ id }
@@ -49,16 +52,29 @@ class ProductCard extends React.Component {
           image={ image }
         >
           <p>{name}</p>
-          <p>{price}</p>
-          <img src={ image } alt={ name } />
-          { freeShipping ? <p data-testid="free-shipping">Frete Grátis </p> : null }
+          <img
+            src={ image }
+            alt={ name }
+            className="product-img"
+          />
+          <div
+            className="product-info"
+          >
+            { freeShipping ? <p data-testid="free-shipping">Frete Grátis</p> : null }
+            <p>{`R$${price}`}</p>
+            <button
+              className="add-to-cart-button"
+              data-testid="product-add-to-cart"
+              onClick={ this.addProductToCart }
+            >
+              <p
+                className="shopping-cart-text"
+              >
+                Adicionar ao carrinho
+              </p>
+            </button>
+          </div>
         </Link>
-        <button
-          data-testid="product-add-to-cart"
-          onClick={ this.addProductToCart }
-        >
-          Adicionar ao carrinho de compras
-        </button>
       </div>
     );
   }
